@@ -1,0 +1,220 @@
+.navbar{
+    width: 100%;
+    position: top;
+    height: 120px;
+    background-color: black;
+}
+
+.busca{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: 200px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.procurar{
+    font-size: 15px !important;
+    color: aliceblue !important;
+}
+
+.dog{
+    width: 70px;
+    height: auto;
+    position: relative;
+    top: 5px;
+    left: 50px;    
+}
+
+.carrinho{ 
+    color: aliceblue;
+}
+
+.entrar{
+    color: aliceblue;
+}
+
+.entrar:hover{
+    border: 1px solid white;
+    padding: 15px;
+}
+
+.carrinho:hover{
+    border: 1px solid white;
+    padding: 15px;   
+}
+
+.boxmeio{
+    display: inline;
+    margin-top: -50px;
+    margin-right: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium';
+}
+
+.boxdireita{
+    display: inline;
+    margin-right: 100px;
+    color: aliceblue;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium';
+}
+
+.secao-produto{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.botao-carrinho-compra{
+    margin: 130px 100px;
+}
+
+.carrinho-compra{
+    width: 100px;
+
+}
+
+.cartao-produtos{
+    display: flex;
+}
+
+.produtos-padrao{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.produtos-desconto{
+    margin-left: 50px;
+}
+
+.cartao-produto{
+    width: 250px;
+    height: 400px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.botao-cartao{
+    margin: 130px 100px;
+}
+
+.detalhes-produto{
+    padding: 10px;
+}
+
+.texto-cartao{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cartao-produto .imagem-produto img{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.conteudo-cartao{
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    top: -400px;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    visibility: hidden;
+    transition: .2s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartao-produto:hover .conteudo-cartao{
+    visibility: visible;
+    top: 0;
+}
+
+.preco-produto{
+    font-size: 17px;
+}
+
+.preco-produto span{
+    margin-left: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+.textoesquerda{
+    margin-left: 200px;
+    margin-top: 30px;
+    font-size: 14px;
+    color:aliceblue;
+    width: 210px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textoesquerda:hover{
+    border: 1px solid white;
+    padding: 15px;
+}
+
+.textomeio:hover{
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.textomeio{
+    margin-top: 30px;
+    margin-left: 500px;
+    font-size: 14px;
+    color:aliceblue;
+    width: 210px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textos{
+    display: flex;
+}
+
+.secao-produtos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.banho-tosa-texto{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.BanhoeTosa{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+form{
+    width: 800px;  
+}
+
+form input{
+    margin: 5px;
+    margin-top: 15px;
+}
+
+form select{
+    margin: 5px;
+    margin-top: 15px;
+}

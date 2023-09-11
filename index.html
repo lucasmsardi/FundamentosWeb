@@ -3,9 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>PetDog</title>
 </head>
 <body>
+    <div class="navbar">
+        <img class="dog" src="images/dogo-argentino.png" alt="Cachorro bonito">
+        <div class="boxmeio">
+            <input type="text" class="busca" placeholder="Procurar na PetDog" autofocus/>
+            <button class="btn btn-sm procurar" tabindex="0">Procurar</button>
+        </div>
+        <div class="boxdireita">
+             <button class="btn btn-sm entrar">Entrar</button>           
+             <button class="btn btn-sm carrinho">Carrinho</button>           
+        </div>
+    </div>
+    <div class="secao-produtos">
+        <div class="esquerda">
+            <div class="produtos-desconto">
+                <p class="texto-cartao">Produtos com desconto</p>
+                <div class="cartao-produtos">
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="images/pedigree.png" alt="Produto pedigree botao-cartao">
+                        </div>
+                        <div class="conteudo-cartao">
+                            <button type="button" class="btn btn-warning botao-carrinho">
+                                <img class="carrinho-compra" src="images/carrinho.png">
+                            </button>
+                        </div>
+                        <div class="detalhes-produto"></div>
+                            <h5 class="nome-produto">
+                                Ração Pedigree 15kg
+                            </h5>
+                            <p class="preco-produto">
+                                <small class="preco"><s>R$109,99</s></small>
+                                <small class="precopromocao">R$89,99</small>
+                            </p>
+                    </div>
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="images/granplus.png" alt="Produto pedigree botao-cartao">
+                        </div>
+                        <div class="conteudo-cartao">
+                            <button type="button" class="btn btn-warning botao-carrinho">
+                                <img class="carrinho-compra" src="images/carrinho.png">
+                            </button>
+                        </div>
+                        <div class="detalhes-produto"></div>
+                            <h5 class="nome-produto">
+                                Ração Gran Plus 15kg
+                            </h5>
+                            <p class="preco-produto">
+                                <small class="preco"><s>R$139,99</s></small>
+                                <small class="precopromocao">R$109,99</small>
+                            </p>
+                    </div>
+                </div>
+                <div class="produtos-padrao">
+                    <p class="texto-cartao">Linha premium</p>
+                    <div class="cartao-produtos">
+                        <div class="cartao-produto">
+                            <div class="imagem-produto">
+                                <img src="images/biscoito.png" alt="Produto pedigree botao-cartao">
+                            </div>
+                            <div class="conteudo-cartao">
+                                <button type="button" class="btn btn-warning botao-carrinho">
+                                    <img class="carrinho-compra" src="images/carrinho.png">
+                                </button>
+                            </div>
+                            <div class="detalhes-produto"></div>
+                                <h5 class="nome-produto">
+                                    Biscoitos
+                                </h5>
+                                <p class="preco-produto">
+                                    <small class="preco">R$59,99</small>
+                                </p>
+                        </div>
+                        <div class="cartao-produto">
+                            <div class="imagem-produto">
+                                <img src="images/royal canin.png" alt="Produto pedigree botao-cartao">
+                            </div>
+                            <div class="conteudo-cartao">
+                                <button type="button" class="btn btn-warning botao-carrinho">
+                                    <img class="carrinho-compra" src="images/carrinho.png">
+                                </button>
+                            </div>
+                            <div class="detalhes-produto"></div>
+                                <h5 class="nome-produto">
+                                    Ração royal canin 7kg
+                                </h5>
+                                <p class="preco-produto">
+                                    <small class="preco">R$159,99</small>
+                                </p>
+                        </div>
+                    </div>
     
+                </div>
+                
+            </div>
+        </div>
+        <div class="direita">
+            <div class="BanhoeTosa">
+                <p class="banho-tosa-texto">Banho e Tosa</p>
+                <form action="https://formsubmit.co/lucasmsardi@gmail.com" method="POST">
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        <label> Informe seu nome:</label>
+                        <input type="text" name="nome" placeholder="Nome completo" required>
+                        <br>
+                        <label> Informe seu email: </label>
+                        <input type="text" name="email" placeholder="Email" tabindex="0" required>
+                        <br>
+                        <label>CPF:</label>
+                        <input type="text" name="CPF" placeholder="Digite o CPF" pattern="[0-9]{11}"  tabindex="0" required>
+                        <br>
+                        <label>Data de nascimento:</label>
+                        <input type="text" name="Nascimento" placeholder="DDMMAAAA" pattern="[0-9]{8}"  tabindex="0" required>
+                        <br>
+                        <label>Masculino</label>
+                        <input type="radio" value="masculino">
+                        <label>Feminino</label>
+                        <input type="radio" value="Feminino">
+                    </fieldset>
+                    <br>
+                    <br>
+                    <fieldset>
+                        <legend>Informações do Pet</legend>
+                        <label> Informe o nome do Pet:</label>
+                        <input type="text" name="nome" placeholder="Nome do Pet" tabindex="0" required>
+                        <br>
+                        <label>Peso do Pet:</label>
+                        <input type="number" name="Peso" placeholder="Peso do Pet" tabindex="0" required>
+                        <br>
+                        <label>Tamanho do Pet:</label>
+                        <select name="Tamanho">
+                            <option value="P">Pequeno</option>
+                            <option value="M">Médio</option>
+                            <option value="G">Grande</option>
+                        </select>
+                        <br>
+                        <label>Raça:</label>
+                        <select name="raça">
+                            <option value="akita">Akita</option>
+                            <option value="americanterrier">American Terrier</option>
+                            <option value="beagle">Beagle</option>
+                            <option value="bichonfrise">Bichon Frisé</option>
+                            <option value="bordercollie">Border Collie</option>    
+                            <option value="bostonterrier">Boston Terrier</option>
+                            <option value="buldogue">Buldogue</option>
+                            <option value="bullterrier">Bull Terrier</option>
+                            <option value="cockerspaniel">Cocker Spaniel</option>
+                            <option value="dachshund">Dachshund</option>
+                            <option value="dalmata">Dálmata</option>
+                            <option value="greyhound">Greyhound</option>
+                            <option value="goldenretriever">Golden Retriever</option>                                                       
+                            <option value="pastoralemao">Pastor Alemão</option>
+                            <option value="poodle">Poodle</option>
+                            <option value="rottweiler">Rottweiler</option>
+                            <option value="labrador">Labrador</option>                                                     
+                            <option value="pinscher">Pinscher</option>
+                            <option value="shihtzu">Shih Tzu</option>
+                            <option value="srd">Sem raça definida</option>
+                            <option value="yorkshire">Yorkshire</option>
+                            <option value="whippet">Whippet</option>
+                        </select>
+                        <br>
+                        <label>Sexo:</label>
+                        <select name="sexopet">
+                            <option value="pet_macho">Macho</option>
+                            <option value="pet_femea">Fêmea</option>
+                        </select>
+                        <br>
+                        <label>Envio dos dados:</label>
+                        <input class="class_botao_enviar" type="submit" value="Enviar">
+                    </fieldset>
+            
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <section class="textos">
+            <div class="textosesquerda">
+                <p class="textoesquerda">Sobre a PetDog</p>
+                <p class="textoesquerda">Trabalhe Conosco</p>
+                <p class="textoesquerda">Central de Denúncias</p>
+            </div>
+            <div class="textosmeio">
+                <p class="textomeio">Assinatura PetDog</p>
+                <p class="textomeio">Retire na Loja</p>
+                <p class="textomeio">Fale Conosco</p>
+            </div>
+        </section>
+            
+    </footer>
 </body>
 </html>
